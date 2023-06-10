@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav li:first-child  img {
+    height: 60px;
+}
+/* ผลักขวาให้้สุดเท่าที่จะทำได้ */
+nav li:first-child {
+    margin-right: auto;
+}
+
+nav li:last-child {
+    margin-left: auto;
+}
+
+nav li button {
+    padding: 10px 40px;
+    color: white;
+    background-color: black;
+    border: 0px;
+    border-radius: 8px;
+}
