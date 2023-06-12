@@ -63,7 +63,7 @@ section .one {
 
 section .two {
     height: 500px;
-    width: 50vw;
+    width: 60vw;
     border-radius: 40px;
     margin-right: auto;
     object-fit: cover;
@@ -72,6 +72,230 @@ section .two {
 
 main {
     display: grid;
-    grid-column: 50% 50%;
-    height: 500px;
+    grid-template-columns: 50% 50%;
+    margin-right: 100px;
+    margin-left: 100px;
 }
+
+main .left {
+    display: grid;
+    grid-template-rows: repeat(5,15%);
+}
+
+main .left .option {
+    display: grid;
+    grid-template-columns: 20% 60%;
+}
+
+main .left .option img {
+    height: 50%;
+    width: 50%;
+}
+
+main .right {
+    padding-top: 200px;
+}
+
+main .right img {
+    width: 40vw;
+    height: 80vh;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+main .right .content {
+    border-radius: 20px 0px 20px 0px;
+    background-color: black;
+    color: white;
+    transform: translate(130%, -700%);
+    width: 300px;
+    padding: 20px;
+    box-shadow: -5px 5px 2px white;
+}
+
+.hotel-list {
+    margin-top: 200px;
+    margin-left: 100px;
+}
+
+.hotel-list h1 {
+    margin-bottom: 50px;
+}
+
+.hotel-list .card-hotel-list {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.hotel-list-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.hotel-list-container .card-hotel-list {
+    margin: 20px;
+}
+
+.hotel-list .card-hotel-list {
+    display: flex;
+    background-color: rgb(241, 237, 237);
+    height: 400px;
+    width: 80%;
+    border-radius: 3%;
+}
+
+.hotel-list .card-hotel-list img {
+    width: 50%;
+}
+
+.hotel-list .card-hotel-list .card-option-detail h1 {
+    height: fit-content;
+    font-size: 100%;
+    margin: 30px;
+}
+
+.hotel-list .card-hotel-list .card-option-detail div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.hotel-list .card-hotel-list .card-option-detail div p {
+    margin-left: 20px;
+    font-size: 12px;
+}
+
+.hotel-list .card-hotel-list .card-option-detail div img {
+    height: 30px;
+    width: 30px;
+    margin-left: 20%;
+}
+
+.customers {
+    margin-top: 200px;
+}
+
+.customers h1 {
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.customers .cards {
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+}
+
+.customers .cards .left img {
+    width: 50%;
+    border-radius: 5%;
+    margin-left: 100px;
+}
+
+.customers .cards .right {
+    display: flex;
+    width: 80%;
+    align-items: center;
+}
+
+.news {
+    margin-top: 200px;
+}
+
+.news h1 {
+    margin-left: 100px;
+}
+
+.news .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.news .cards .card img {
+    width: 80%;
+    border-radius: 5%;
+    height: 270px;
+}
+
+.news .cards .card .content {
+    border-radius: 5%;
+    background-color: white;
+    transform: translate(5%, -70%);
+    width: 80%;
+    padding: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    margin-top: 200px;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+footer header {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer header h1 {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+footer header button {
+    margin-top: 100px;
+    margin-right: 100px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+footer .content {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
+footer .content ul {
+    width: 80%;
+    margin-left: 100px;
+}
+
+footer .content li {
+    margin-top: 20px;
+}
+
+footer .content ul li:first-child {
+    font-size: 20px;
+}
+
+footer .content li.socials button {
+    background-color: white;
+    color: black;
+    border: 0px;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+}
+
+footer .copyright {
+    margin-top: 50px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+footer .copyright img {
+    width: 100px;
+    border-radius: 100%;
+}
+
